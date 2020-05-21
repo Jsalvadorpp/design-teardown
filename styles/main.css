@@ -1,0 +1,58 @@
+/** Global */
+body{
+    color: #f6f3f2;
+    min-height: 100vh;
+    display: grid;
+}
+.dark-btn{
+    background-color: #a92e23;
+    color: white;
+    font-size: 20px;
+    font-weight: 600; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+/* **********/
+
+
+
+
+
+/** Navigation Bar */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #d33a2c;
+    font-size: 20px;
+    font-weight: 600;
+}
+.brand-logo{
+    margin-right: 50px;
+}
+
+.navbar-links{
+    display: flex;
+}
+
+.nav-item{
+    margin-right: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.nav-item:hover{
+    background-color: #a92e23;
+}
+
+/* ***************** */
+
+
+/** Page Content */
+/* ************* */
+
+
+/** Footer */
+/* ********* */
