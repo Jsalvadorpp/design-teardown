@@ -15,6 +15,9 @@ body{
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5); 
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
 }
+.txt-center{
+    text-align: center;
+}
 /* **********/
 
 
@@ -33,11 +36,9 @@ nav{
 .brand-logo{
     margin-right: 50px;
 }
-
 .navbar-links{
     display: flex;
 }
-
 .nav-item{
     margin-right: 30px;
     padding: 15px 20px;
@@ -46,7 +47,6 @@ nav{
 .nav-item:hover{
     background-color: #a92e23;
 }
-
 /* ***************** */
 
 
@@ -54,5 +54,49 @@ nav{
 /* ************* */
 
 
+
+
 /** Footer */
+footer{
+    background-color: #d33a2c;
+    align-self: end;
+    padding: 20px 50px;
+}
+footer small{
+    display: inline-block;
+    padding: 0 380px
+}
+.topics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.topic-item{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+.topic-item::before{
+    font-size: 25px;
+    content: "•";
+    color: #a92e23;
+    margin-right: 8px;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 340px;
+}
+.footer-item{
+    margin-right: 15px;
+    line-height: 2.5;
+}
+.footer-item a{
+    border-bottom: 2px solid white;
+}
 /* ********* */
