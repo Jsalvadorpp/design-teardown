@@ -1,5 +1,6 @@
 /** Global */
 body{
+    background-color: #f6f3f2;
     color: #f6f3f2;
     min-height: 100vh;
     display: grid;
@@ -51,6 +52,11 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.layout-3cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* ***************** */
 
 
@@ -128,6 +134,43 @@ nav{
     background: white;
     display: inline-block;
     padding: 10px;
+}
+/*==== Sub Articles ====*/
+.sub-articles{
+    color: black;
+    margin: 0 50px;
+    padding: 40px 0;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+.sub-articles .date,
+.sub-articles .author{
+    color: #666666;
+    margin-bottom: 15px;
+}
+.sub-articles h1{
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.sub-articles .author{
+    font-weight: 600;
+}
+.sub-articles p{
+    color: #333333;
+    line-height: 1.8;
+}
+.sub-articles article{
+    transition: all 0.4s;
+    padding: 10px 20px;
+}
+.sub-articles article:hover{
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.sub-articles article:hover h1{
+    color: #d33a2c;
 }
 
 
