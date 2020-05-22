@@ -16,8 +16,25 @@ body{
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5); 
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
 }
+.light-btn{
+    color: #267dcd;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
 .txt-center{
     text-align: center;
+}
+.layout-2cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.layout-3cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 /* **********/
 
@@ -48,15 +65,6 @@ nav{
 .nav-item:hover{
     background-color: #a92e23;
 }
-.layout-2cols{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.layout-3cols{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 /* ***************** */
 
 
@@ -137,41 +145,69 @@ nav{
 }
 /*==== Sub Articles ====*/
 .sub-articles{
-    color: black;
     margin: 0 50px;
     padding: 40px 0;
     column-gap: 40px;
     justify-content: space-between;
 }
-.sub-articles .date,
-.sub-articles .author{
+.article-sm .date,
+.article-sm .author{
     color: #666666;
     margin-bottom: 15px;
 }
-.sub-articles h1{
+.article-sm h1{
     margin-bottom: 25px;
     font-size: 26px;
     line-height: 1.2;
 }
-.sub-articles .author{
+.article-sm .author{
     font-weight: 600;
 }
-.sub-articles p{
+.article-sm p{
     color: #333333;
     line-height: 1.8;
 }
-.sub-articles article{
+.article-sm{
     transition: all 0.4s;
     padding: 10px 20px;
+    color: black;
 }
-.sub-articles article:hover{
+.article-sm:hover{
     transform: scale(1.1);
     background-color: white;
     box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
 }
-.sub-articles article:hover h1{
+.article-sm:hover h1{
     color: #d33a2c;
 }
+
+/*==== Extra-info ====*/
+.extra-info{
+    grid-template-columns: 1fr 2fr;
+    margin: 0 50px;
+}
+.extra-info aside{
+    background-color: #d33a2c;
+    border-radius: 10px;
+    padding: 50px 180px;
+}
+.extra-info aside h1,
+.extra-info aside p{
+    margin-bottom: 30px;
+}
+.extra-info aside h1{
+    font-size: 40px;
+    color: white;
+}
+.extra-info p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.extra-info aside small{
+    margin-top: 30px;
+    display: block;
+}
+
 
 
 /* ************* */
