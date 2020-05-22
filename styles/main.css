@@ -265,6 +265,51 @@ nav{
     color: #666666;
 }
 
+/*==== Guides ====*/
+#guides{
+    color: black;
+    padding: 20px 50px;
+}
+.guide small,
+.guide h1{
+    margin-bottom: 10px;
+}
+.guide small{
+    color: #666666;
+    font-size: 15px;
+    display: block;
+}
+.guide h1{
+    font-size: 28px;
+    color: #333333;
+}
+.guide-content{
+    padding: 10px 20px;
+}
+.guide-item{
+    color: #267dcd;
+    font-size: 22px;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+}
+.guide-item::before{
+    font-size: 25px;
+    content: "•";
+    color: #d33a2c;
+    margin-right: 8px;
+}
+.guide{
+    transition: all 0.4s;
+    padding: 10px 20px;
+}
+.guide:hover{
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+
 
 
 
